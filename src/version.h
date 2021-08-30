@@ -1,0 +1,6 @@
+#ifndef VERSION_H_INCLUDED
+#define VERSION_H_INCLUDED
+
+#define VERSION "中文Beta版"
+
+#endif // VERSION_H_INCLUDED
