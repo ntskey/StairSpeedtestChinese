@@ -1,6 +1,6 @@
 #ifndef VERSION_H_INCLUDED
 #define VERSION_H_INCLUDED
 
-#define VERSION "中文Beta版"
+#define VERSION "0.7.3"
 
 #endif // VERSION_H_INCLUDED
