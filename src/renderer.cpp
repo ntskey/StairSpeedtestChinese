@@ -24,11 +24,11 @@ int widNumber = 0, widNA = 0, widB = 0, widKB = 0, widMB = 0, widGB = 0, widPerc
 int widUnkn = 0, widBlock = 0, widFullCone = 0, widRestCone = 0, widPortRest = 0, widSym = 0;
 
 //original color
-const int def_colorgroup[5][3] = {{65535, 65535, 65535}, {32768, 65535, 0}, {65535, 65535, 0}, {65535, 32768, 49152}, {65535, 0, 0}};
+const int def_colorgroup[5][3] = {{0, 65535	, 65535}, {0, 65535, 65535}, {0, 65535, 65535}, {0, 65535, 65535}, {0, 65535, 65535}};
 const int def_bounds[5] = {0, 64 * 1024, 512 * 1024, 4 * 1024 * 1024, 16 * 1024 * 1024};
 
 //rainbow color
-const int rainbow_colorgroup[8][3] = {{65535, 65535, 65535}, {26112, 65535, 26112}, {65535, 65535, 26112}, {65535, 45568, 26112}, {65535, 26112, 26112}, {57856, 35840, 65535}, {26112, 52224, 65535}, {26112, 26112, 65535}};
+const int rainbow_colorgroup[8][3] = {{0, 65535, 65535}, {0, 65535, 65535}, {0, 65535, 65535}, {0, 65535, 65535}, {0, 65535, 65535}, {0, 65535, 65535}, {0, 65535, 65535}, {0, 65535, 65535}};
 const int rainbow_bounds[8] = {0, 64 * 1024, 512 * 1024, 4 * 1024 * 1024, 16 * 1024 * 1024, 24 * 1024 * 1024, 32 * 1024 * 1024, 40 * 1024 * 1024};
 
 int calcLength(const std::string &data)
@@ -436,7 +436,7 @@ std::string exportRender(std::string resultpath, std::vector<nodeInfo> &nodes, b
     std::string gentime = "图片生成时间 " + getTime(3);
     std::string traffic = "消耗流量： " + speedCalc((double)total_traffic) + ". ";
     std::string about = "By Stair Speedtest Reborn " VERSION ".";
-    std::string title = "  Stair Speedtest Reborn Result Table ( " VERSION " )  ";
+    std::string title = "imkcp的垃圾测速工具";
     //SSRSpeed style
     if(export_as_ssrspeed)
     {
